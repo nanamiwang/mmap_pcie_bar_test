@@ -104,11 +104,15 @@ void mmap_pcie_bar_test(uint32_t vendor, uint32_t device, unsigned int func_num,
 
 
 // AMD
-#define VENDOR   0x1002
+//#define VENDOR 0x1002
+// NVIDIA
+#define VENDOR 0x10de
 // RX 7900 XTX
-#define DEVICE   0x744c
+//#define DEVICE 0x744c
+// RTX4090
+#define DEVICE 0x2684
 #define FUNCTION_NUM 0
-#define BAR_NUM      0
+#define BAR_NUM      1
 
 int main(int argc, char *argv[])
 {
