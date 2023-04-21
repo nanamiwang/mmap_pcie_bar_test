@@ -94,7 +94,7 @@ void mmap_pcie_bar_test(uint32_t vendor, uint32_t device, unsigned int func_num,
 	}
 	std::cout << "mmap succeeded, read something now\n";
 	uint8_t *b = (uint8_t *)bar;
-	printf("Offset 0x%lX (%lu M): ", offset, offset);
+	printf("Offset 0x%llX (%lu M): ", offset * 1048576ull, offset);
 	for(uint64_t i = 0;i < 16ull;i++)
 	  printf("0x%02X ", b[offset * 1048576 + i]);
 	printf("\n");
