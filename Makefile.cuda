@@ -1,9 +1,9 @@
-CC=g++
+CC=nvcc
 
 
 # Not super sure about this one, but use of -O0 here should
 # prevent that consecutive writes to the same PCI register are optimized out
-CFLAGS=-std=c++11 -pedantic -Wall -O0
+CFLAGS=-std=c++11 -O0 -arch=sm_89
 INC=
 LIB=
 
